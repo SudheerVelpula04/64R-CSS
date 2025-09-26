@@ -1,32 +1,106 @@
-/* *{
-    background-color: black;
-    color: red;
-} */
+/*
+Box-modal
+---------
+height- in the every project we won't use the height
+
+content- will accept the width and height
+padding- the padding will apply around the content and the also apply bg-color
+        it dos't accept the -ve values
+border- the border will apply the around the padding 
+        the we can apply colors also
+        Note: in the border we need to mention comp border style
+margin- the margin will apply the around the border/element
+        it's accept the -ve values
+
+ */
+
+ div{
+    /* height: 200px;
+    width: 200px; */
+    /* background-color: red; */
+    /* padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px; */
+
+    /* padding: 10px 20px 30px 40px; */
+
+    /* padding: 10px; */
+
+    /* border-top-color: black;
+    border-top-width: 5px;
+    border-top-style: solid;
 
 
-/* .heading{
-    color: red;
-}
-.heading-1,.heading-3{
-    color: purple;
-    background-color: lightblue
-} */
+    border-right-color: purple;
+    border-right-width: 5px;
+    border-right-style: dotted;
 
-.heading{
-    /* text-align: center; */
-    /* text-align: right; */
-    /* text-align: start; */
+    border-bottom-color: yellow;
+    border-bottom-width: 5px;
+    border-bottom-style: dashed;
 
-}
-div{
-    background-color: aqua;
-    width: 200px;
-    height: 200px;
-    text-align: justify;
-    /* text-transform: capitalize; */
-    /* text-transform: lowercase; */
-    /* text-transform: uppercase; */
-}
-a{
-    text-decoration: none;
-}
+    border-left-color: aqua;
+    border-left-width: 5px;
+    border-left-style: groove; */
+
+
+    /* border-style: dashed;
+    border-width:5px;
+    border-color:yellow ; */
+
+    /* border: 3px solid yellow; */
+
+
+    /* border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+    /* border-radius: 10px; */
+
+    /* margin-top:10px ;
+    margin-right: 20px;
+    margin-bottom:30px ;
+    margin-left:40px; */
+    
+    /* margin: 10px 20px 30px 40px; */
+    /* margin: 10px; */
+    
+
+
+
+ }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+    /* p{
+        background-color: gray;
+    }
+    h1{
+        background-color: lightgreen;
+    } */
+
+    .card-container{
+        width: 300px;
+        /* height: 500px; */
+        /* border: 2px solid; */
+        margin-top: 30px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background-color: lightsalmon;
+    }
+    .img-container{
+        height: 200px;
+        width: 200px;
+        /* border: 3px solid black; */
+        margin-top: 10px;
+        margin-bottom: 5px;
+        padding: 20px;
+    }
+    p{
+        padding: 30px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
