@@ -1,106 +1,64 @@
 /*
-Box-modal
----------
-height- in the every project we won't use the height
+    positions in css
+    ----------------
+    position:static,relative,absolute,sticky,fixed;
+    top:value;
+    bottom:value;
+    left:value;
+    right:value;
 
-content- will accept the width and height
-padding- the padding will apply around the content and the also apply bg-color
-        it dos't accept the -ve values
-border- the border will apply the around the padding 
-        the we can apply colors also
-        Note: in the border we need to mention comp border style
-margin- the margin will apply the around the border/element
-        it's accept the -ve values
 
  */
 
- div{
-    /* height: 200px;
-    width: 200px; */
+ .parent{
+    border: 2px solid;
+    width: 400px;
+    height: 400px;
+    position: relative;
     /* background-color: red; */
-    /* padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    padding-left: 40px; */
+    /* z-index: -1; */
+    /* top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+    /* bottom: -200px; */
+    left: 200px;
+    top: 200px;
 
-    /* padding: 10px 20px 30px 40px; */
-
-    /* padding: 10px; */
-
-    /* border-top-color: black;
-    border-top-width: 5px;
-    border-top-style: solid;
-
-
-    border-right-color: purple;
-    border-right-width: 5px;
-    border-right-style: dotted;
-
-    border-bottom-color: yellow;
-    border-bottom-width: 5px;
-    border-bottom-style: dashed;
-
-    border-left-color: aqua;
-    border-left-width: 5px;
-    border-left-style: groove; */
-
-
-    /* border-style: dashed;
-    border-width:5px;
-    border-color:yellow ; */
-
-    /* border: 3px solid yellow; */
-
-
-    /* border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px; */
-    /* border-radius: 10px; */
-
-    /* margin-top:10px ;
-    margin-right: 20px;
-    margin-bottom:30px ;
-    margin-left:40px; */
-    
-    /* margin: 10px 20px 30px 40px; */
-    /* margin: 10px; */
-    
-
-
-
+   
  }
- *{
+ .child{
+    border: 2px solid red;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    /* top: 0; */
+    right: 10px;
+    bottom: 10px;
+ }
+
+ .img{
+    width: 300px;
+    height: 200px;
+    border: 2px solid;
+    position: relative;
+    top: 100px;
+    display: inline-block;
+ }
+ img{
+    width: 100%;
+    height: 100%;
+ }
+ h3{
+    position: absolute;
+    top: 150px;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin-left: 15px;
+    /* background-color: lightblue; */
+    width: 100%;
+    text-align: center;
+    color: rgb(228, 8, 8);
+    letter-spacing: 40px;
+    /*            x   y   blur  color   */
+    text-shadow: 2px 10px 5px black;
  }
-    /* p{
-        background-color: gray;
-    }
-    h1{
-        background-color: lightgreen;
-    } */
-
-    .card-container{
-        width: 300px;
-        /* height: 500px; */
-        /* border: 2px solid; */
-        margin-top: 30px;
-        border-top-right-radius: 50px;
-        border-bottom-left-radius: 50px;
-        background-color: lightsalmon;
-    }
-    .img-container{
-        height: 200px;
-        width: 200px;
-        /* border: 3px solid black; */
-        margin-top: 10px;
-        margin-bottom: 5px;
-        padding: 20px;
-    }
-    p{
-        padding: 30px;
-    }
-    img{
-        width: 100%;
-        height: 100%;
-    }
