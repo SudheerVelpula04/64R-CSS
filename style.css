@@ -1,64 +1,70 @@
 /*
-    positions in css
-    ----------------
-    position:static,relative,absolute,sticky,fixed;
-    top:value;
-    bottom:value;
-    left:value;
-    right:value;
+absolute
+and 
+relative
 
+fixed
+sticky
 
  */
+ /* body{
+   background-color: black;
+ }
+ .nav{
+   background-color: purple;
+   color: white;
+   padding: 20px;
+   position: fixed;
+   top: 0px;
+   width: 100%;
+   z-index: +1;
+ }
+ .home{
+   margin-top: 60px;
+ }
+ .item{
+   margin-left: 200px;
+ }
+ h1{
+   text-align: center;
+   background-color: red;
+   position: sticky;
+   top: 60px;
+ }
+ p{
+   color: white;
+ } */
 
- .parent{
-    border: 2px solid;
-    width: 400px;
-    height: 400px;
-    position: relative;
-    /* background-color: red; */
-    /* z-index: -1; */
-    /* top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0; */
-    /* bottom: -200px; */
-    left: 200px;
-    top: 200px;
 
-   
- }
- .child{
-    border: 2px solid red;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    /* top: 0; */
-    right: 10px;
-    bottom: 10px;
- }
+ /*
+ 2. combinators and pseudo class 
+ --------------
+ in combinators there are 4 types of combinators in css
+ 1. child selector--------(>)
+      the child selector will access 
+      the child's of the parent
+      and it will access directly
+ 2. decadent selector------( ) (space)
+       the decadent selector will access 
+      the child's of the parent
+      and it will access directly and indirectly
+ 3. next sibling selector | adjacent sibling selector-------(+)
+      what is mean by siblings ?
+      sister
+      brothers
 
- .img{
-    width: 300px;
-    height: 200px;
-    border: 2px solid;
-    position: relative;
-    top: 100px;
-    display: inline-block;
- }
- img{
-    width: 100%;
-    height: 100%;
- }
- h3{
-    position: absolute;
-    top: 150px;
-    margin: 0;
-    margin-left: 15px;
-    /* background-color: lightblue; */
-    width: 100%;
-    text-align: center;
-    color: rgb(228, 8, 8);
-    letter-spacing: 40px;
-    /*            x   y   blur  color   */
-    text-shadow: 2px 10px 5px black;
- }
+ 4. general sibling selector---------(~)
+
+
+ stx:
+ ---
+ simpleSelector combinator simpleSelector{
+                     property:value;
+                        }
+
+
+  */
+div>span+p{
+   color: red;
+   background-color: purple;
+}
