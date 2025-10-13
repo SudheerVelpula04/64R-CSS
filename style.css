@@ -7,41 +7,86 @@
   display:inline-block;
   display:none;
   display:flex;
+    one dimensional row are column
+                     x        y
+
+      1. parent pro
+
+
+      2. child pro
+
+
+
+
   display:grid;
  */
- /* div{
-  background-color: lightblue;
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-  display: none;
-  visibility: hidden;
- }
- span{
-  background-color: lightgray;
-  width: 200px;
-  height: 200px;
-  display: inline-block;
- } */
 
 
- .container{
-  width: 1000px;
-  /* height: 400px; */
-  /* border: 2px solid; */
- }
+
+
+
+
+  .container{
+    border: 2px solid;
+    display: flex;
+    /* width: fit-content; */
+    height: 400px;
+    width: 600px;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: start; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* y-axis */
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: start;
+    /* align-items: end; */
+    /* align-items: center; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap-reverse;
+    align-content: start;
+    /* align-content: center; */
+    /* align-content: end; */
+
+  }
  .item{
-  width: 200px;
-  /* border: 2px solid; */
-  display: inline-block;
+  font-size: xx-large;
   padding: 10px;
-
  }
- .item>p{
-  padding: 10px;
-
+ .item-1{
+  background-color: lightblue;
  }
- img{
-  width: 100%;
+ .item-2{
+  background-color: lightgray;
  }
- 
+.item-3{
+  background-color: lightslategray;
+}
+.item-4{
+  background-color: lightsalmon;
+}
+.item-5{
+  background-color: lightsteelblue;
+}
+.task{
+  background-color: purple;
+  display: flex;
+  padding: 5px;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  
+}
+.bi{
+  font-size: xx-large;
+  color: white;
+  padding: 5px;
+}
