@@ -1,82 +1,128 @@
 /*
-  display
-  -------
-  how the container need to be display in web-document
-  display:inline;
-  display:block;
-  display:inline-block;
-  display:none;
-  display:flex;
-    one dimensional row are column
-                     x        y
+pseudo class in css
+-------------------
+: single column
 
-      1. parent pro
-
-
-      2. child pro
-
-
-  display:grid;
  */
-  .container{
-    display: flex;
-    gap: 5px;
-    border: 3px solid;
-    /* height: 500px; */
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* align-items: center; */
-    align-items: center;
-  }
- .item{
-  font-size: xx-large;
-  /* padding: 10px; */
-  width: 200px;
-  height: 200px;
-  /* width: 400px; */
-  /* width: 0px; */
-  text-align: center;
-  /* flex-shrink: 0; */
-  /* flex-basis: 0px; */
-  /* flex-basis: 300px;
-  flex-flow: 200px; */
-
+ /* a:link{
+  color: yellow;
+ }
+ a:hover{
+  color: red;
+ }
+  a:active{
+  color: pink;
+ }
+ a:visited{
+  color: rgb(144, 224, 68);
+ } */
   
- }
- .item-1{
-  background-color: lightblue;
-  /* flex-shrink: 1; */
-  /* flex-grow: 1; */
-  /* order:-1; */
-  align-self: self-start;
- }
- .item-2{
-  background-color: lightgray;
-  /* flex-grow: 1; */
-  /* order: +1; */
- }
-.item-3{
-  background-color: lightslategray;
-  /* flex-shrink: 2; */
-  /* flex-grow: 1; */
-  /* order: -1; */
-  align-self: self-start;
+ /* button:active{
+  color: red;
+ } */
+/* p{
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
 }
-.item-4{
-  background-color: lightsalmon;
-  /* flex-grow: 1; */
+p{
+  color: goldenrod;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
 }
-.item-5{
-  background-color: lightsteelblue;
-  /* flex-grow: 1; */
-  /* order: 1; */
-  align-self: self-end;
+h1{
+  display: none
 }
-.item>img{
+p:hover+h1{
+  display: block;
+  background-color: purple;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+} */
+/* p{
+  display: none;
+} */
+#name{
+  display: none;
+}
+#name:checked+p{
+  display: block;
+}
+.image{
+  width: 300px;
+  height: 200px;
+  border: 2px solid;
+ 
+}
+.image>img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.image>img{
+  display: none;
+}
+#a,#b,#c,#d,#e{
+  display: none;
+}
+#a:checked~.image>:nth-child(1){
+  display: inline-block;
+}
+#b:checked~.image>:nth-child(2){
+  display: inline-block;
+}
+#c:checked~.image>:nth-child(3){
+  display: inline-block;
+}
+#d:checked~.image>:nth-child(4){
+  display: inline-block;
+}
+#e:checked~.image>:nth-child(5){
+  display: inline-block;
+}
+.main{
+  position: relative;
+  
+}
+.label{
+  position: absolute;
+  top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  /* display: inline-block; */
+  align-items: center;
+  /* width: 100%; */
+  height: 100%;
+  left: 350px;
+  color: white;
+
+}
+.label>label{
+  width: 30px;
+}
+
+
+
+
+
+
+
+/* ul>li:nth-child(1){
+  background-color: red;
+} */
+ /* ul>li:nth-last-child(3){
+  background-color: red;
+ } */
+  /* ul>li:first-child{
+    background-color: red;
+  }
+   ul>li:last-child{
+    background-color: red;
+   } */
+
+
 
 
 
