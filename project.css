@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", sans-serif;
+}
+html,body{
+    height: 100%;
+}
+.nav-container{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    position: fixed;
+    z-index: +1;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.nav-item{
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    transition: 0.8s ease;
+    flex-grow: 1;
+}
+.nav-item:hover{
+    background-color: rgb(215, 237, 237);
+    cursor: pointer;
+    color: black;
+}
+.bg-container{
+    /* border: 2px solid rgb(226, 25, 25); */
+    height: 72%;
+    background-image: url("https://www.w3schools.com/w3images/coffeehouse.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.bg-container>.text-container{
+    font-size: 6.5rem;
+    text-align: center;
+    color: white;
+    line-height: 130px;
+}
+.text-container-2>p{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+.text-container-3>p{
+    color: white;
+    padding: 5px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    width: 40%;
+    /* border: 2px solid red; */
+    height: 3000px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+.about>p{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 1.3rem;
+    width: fit-content;
+    letter-spacing: 10px;
+}
+.ceo{
+    padding: 8px;
+    margin: 20px 0px;
+}
+.ceo>p{
+    text-align: justify;
+    line-height: 20px;
+}
+.order{
+    padding: 8px;
+    margin: 20px 0px;
+}
+.order>p{
+    text-align: justify;
+    line-height: 20px;
+}
+.products{
+    padding: 20px;
+    background-color: aquamarine;
+    border-left-color: rgba(0, 0, 0, 0.225);
+    border-left-width: 8px;
+    border-left-style: solid;
+    margin: 20px 0px;
+}
+.products>p{
+    margin: 20px 0px;
+}
+.image>img{
+    width: 100%;
+    filter: grayscale(50%);
+}
+.hov>p,.address>p{
+    padding: 10px;
+}

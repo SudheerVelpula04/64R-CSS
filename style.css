@@ -1,160 +1,63 @@
+/*
+colors
+    3 types
+variables
+gradients
+    3 types 
+animations
+media Q
+transforms
+attribute selector
+calc
 
-/* body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-} */
-  /*
-.container{
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  transition-property: all;
-  transition-duration: 0.8s;
-  transition-timing-function: linear;
-  transition-delay: 2s;
-  transition: all 1s ease;
-
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container:hover{
-  background-color: green;
-  padding: 30px;
-  border-radius: 50%;
-}
-.container>p{
-  margin: 0;
-  transition: all;
-  transition-duration: 2s;
-  transition-timing-function: ease;
-  display: none;
-  
-}
-.container:hover>p{
-  display:inline-block;
-  font-size: x-large;
-}
-p:hover{
-  color: yellow;
-}
-.item-container{
-  border: 2px solid;
-  background-color: purple;
-  color: white;
-  width: fit-content;
-  padding: 5px;
-  font-size: xx-large;
-  position: relative;
-  right: -1300px;
-  transition: all 1s ease;
-}
-.item{
+ */
+ .container{
   border: 2px solid black;
-  margin: 5px;
-}
-#check:checked~.item-container{
-  right: 0px;
-}
- */
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.container{
-  width: 200px;
-  height: 200px;
-  background-color: red;
-}
-.container:hover{
-  padding: 30px;
-} */
-
-/* 
-pseudo elements
----------------
-
-
- */
- .writen{
-  color: red
+  display: grid;
+  /* gap: 5px; */
+  grid-template-columns: repeat(3,200px);
+  /* grid-template-rows: ; */
+  justify-content: space-around;
+  align-items: end;
+  /* align-content: end; */
+ 
+    height: 700px;
  }
-.css{
-  color: red;
-}
-.css::before{
-  content: "TEXT";
-}
-.css::after{
-  content: "END";
-}
-ul>li:nth-child(even)::before{
-  content: "👉";
-}
-ul>li:nth-child(odd)::before{
-  content: "🫵";
-  font-size: xx-large;
-}
-ul>li:nth-child(even)::after{
-  content: "🤥";
-}
-ul>li:nth-child(odd)::after{
-  content: "🥴";
-  font-size: xx-large;
-}
-li::marker{
-  content: "😆";
-}
-.second::selection{
-  background-color: yellow;
-  color: red;
-}
-input::placeholder{
-  /* font-size: xx-large; */
-  color: gold;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-  font-family: 'Courier New', Courier, monospace;
-}
-p::first-letter{
-  font-size: xx-large;
-}
-p::first-line{
-  text-transform: capitalize;
-  background-color: red;
-}
+ 
+ .item-1{
+  background-color: antiquewhite;
+  /* grid-area: a; */
+
+ }
+ .item-2{
+  background-color: lightblue;
+  /* grid-area: b; */
+grid-area: 1/2/4/6;
+ }
+ .item-3{
+  background-color: lightcoral;
+    /* grid-area: c; */
+
+ }
+ .item-4{
+  background-color: lightgreen;
+    /* grid-area: d; */
+ }
+ .item-5{
+  background-color: rgb(108, 242, 108);
+    /* grid-area: e; */
+ }
+ .item-6{
+  background-color: lightskyblue;
+    /* grid-area: f; */
+ }
+ .item-7{
+  background-color: rgb(39, 94, 128);
+    /* grid-area: g; */
+ }
+ .item-8{
+  background-color: rgb(209, 39, 113);
+    /* grid-area: h; */
+ }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .task{
-  background-color: purple;
-  display: flex;
-  padding: 5px;
-  justify-content: space-evenly;
-  border-radius: 10px;
-  
-}
-.bi{
-  font-size: xx-large;
-  color: white;
-  padding: 5px;
-} */
