@@ -4,8 +4,16 @@
     box-sizing: border-box;
     font-family: "Inconsolata", sans-serif;
 }
+.ham{
+    display: none;
+}
+.ham>label>.bi{
+    z-index: +2;
+    color: white;
+}
 html,body{
     height: 100%;
+
 }
 .nav-container{
     background-color: black;
@@ -122,4 +130,63 @@ html,body{
 }
 .hov>p,.address>p{
     padding: 10px;
+}
+#check{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .bg-container>.text-container{
+        font-size: 4rem;
+        line-height: 80px;
+    }
+    /* .bg-container{
+        margin-top: 100px;
+    } */
+    .nav-container{
+        top: 40px;
+        left: -600px;
+        transition: 0.8s ease;
+
+        
+    }
+    .text-container-2>p{
+        bottom: 30px;
+        left: 50px;
+    }
+    .text-container-3>p{
+        right: 30px;
+    }
+    .main{
+        width: 90%;
+    }
+    .bg-container{
+        height: 60%;
+    }
+    .ham{
+        /* width: fit-content; */
+        background-color: black;
+        color: white;
+        position: fixed;
+        z-index: +1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .ham>label>.bi{
+        font-size: 3rem;
+        
+    }
+    #check:checked~.nav-container{
+        /* display: flex; */
+        left: 0px;
+        /* top: 80px; */
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+    .main{
+        width: 80%;
+    }
 }

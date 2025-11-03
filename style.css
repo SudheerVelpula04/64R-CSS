@@ -1,63 +1,55 @@
 /*
-colors
-    3 types
-variables
-gradients
-    3 types 
-animations
-media Q
-transforms
-attribute selector
-calc
-
+ RWD
+ ---
+ 1.box-sizing
+ 2. grid
+ 3. flex
+ 4. margin and padding =0
+ 5. media 
+ 6. view-port
+  syx:
+  ----
+  @media screen/print/all and (breakPoint){
+        selector{
+            property:value;
+        }
+  }
  */
+ html{
+  height: 100%;
+ }
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  height: 100%;
+}
  .container{
-  border: 2px solid black;
-  display: grid;
-  /* gap: 5px; */
-  grid-template-columns: repeat(3,200px);
-  /* grid-template-rows: ; */
-  justify-content: space-around;
-  align-items: end;
-  /* align-content: end; */
- 
-    height: 700px;
+  width:300px ;
+  height: 300px;
+  background-color: red;
+  border-radius:50%;
+  
  }
- 
- .item-1{
-  background-color: antiquewhite;
-  /* grid-area: a; */
+/*
+mobile view -557px 
+tab view- 800px to 900px 
+Desktop- 1000px and 1200px
+ */
+
+ @media screen and (max-width: 500px) {
+    .container{
+      background-color: yellow;
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      border-radius: 0px;
+    }
 
  }
- .item-2{
-  background-color: lightblue;
-  /* grid-area: b; */
-grid-area: 1/2/4/6;
+ @media screen and (min-width: 500px) and (max-width:800px) {
+    .container{
+      display: none;
+    }
  }
- .item-3{
-  background-color: lightcoral;
-    /* grid-area: c; */
-
- }
- .item-4{
-  background-color: lightgreen;
-    /* grid-area: d; */
- }
- .item-5{
-  background-color: rgb(108, 242, 108);
-    /* grid-area: e; */
- }
- .item-6{
-  background-color: lightskyblue;
-    /* grid-area: f; */
- }
- .item-7{
-  background-color: rgb(39, 94, 128);
-    /* grid-area: g; */
- }
- .item-8{
-  background-color: rgb(209, 39, 113);
-    /* grid-area: h; */
- }
-
-
